@@ -13,7 +13,7 @@ def takePicture(delay = 0, preview = False):
     args.append("-f" if preview else "-n")
     if delay != 0:
         args.append("-t " + str(delay))
-    args.append("-o " + timestamped("photo.jpg"))
+    args.append("-o " + "/home/pi/photos/"+ timestamped("photo.jpg"))
     args.append("-w " + str(1280))
     args.append("-h " + str(1024))
     args.append("-op " + str(212))
