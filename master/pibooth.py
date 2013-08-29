@@ -38,10 +38,12 @@ notifyThread.daemon = True
 notifyThread.start()
 
 # This is our main thread, fake invoking the raspistill binary
-print("Invoking arduino")
-sleep(4)
-print("Taking picture!")
+takePicture(preview=True)
+#print("Invoking raspberry_pi_camera_module")
 
+sleep(4)
+#print("Taking picture!")
+#pibooth.takePicture(preview=True)
 """
 # TODO: count down of 3 2 1 should also start at around 5 seconds ?
 print("3!")

@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import os, time
 import pibooth
-import pibooth_notifications
+#import pibooth_notifications
 import threading
 
 
