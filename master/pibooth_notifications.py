@@ -4,10 +4,12 @@ import notify2
 # photobooth users that they should get ready for a photo
 # and how close they are to getting their photos taken
 
-notify2.init("pi booth")
+def countdown_notify( seconds=3 ):
+     notify2.init("pi booth")
 
+     notify2.Notification("Count Down","Countdown starts now").show()
 
-x = 3 
-while x>-1:
-     notify2.Notification("Count Down",str(x)).show()
-     x = x - 1
+     x = seconds
+     while x>-1:
+          notify2.Notification("Count Down",str(x)).show()
+          x = x - 1

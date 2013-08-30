@@ -44,7 +44,7 @@ while True:
     if initialpress:
       initialpress = 0
     else:
-     pibooth.takePicture(preview=True) 
+      pibooth.picture_with_notification() 
   #  print("Button pressed")
   #update previous input
   prev_reading = reading
