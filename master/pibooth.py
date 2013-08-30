@@ -25,8 +25,8 @@ def takePicture(delay = 0, preview = False):
 
 # Threading demo. This method is invoked in another thread
 def notifications():
-    #call('su pi -c /usr/bin/python /home/pi/projects/pibooth/master/notify_screen.py', shell=True) 
-    countdown_notify()
+    call('su pi -c "/usr/bin/python /home/pi/projects/pibooth/master/notify_screen.py"', shell=True) 
+    #countdown_notify()
     """
     sleep(1)
     print("3!")
