@@ -18,7 +18,7 @@ def takePicture(delay = 0, preview = False):
     args.append("-o " + "/home/pi/photos/"+ timestamped("photo.jpg"))
     args.append("-w " + str(1280))
     args.append("-h " + str(1024))
-    args.append("-op " + str(212))
+    args.append("-op " + str(190))
     call([' '.join(args)], shell=True)
 
 
@@ -44,7 +44,7 @@ def picture_with_notification():
     notifyThread.start()
 
     # This is our main thread, fake invoking the raspistill binary
-    takePicture(preview=True)
+    takePicture(delay=20000,preview=True)
     #print("Invoking raspberry_pi_camera_module")
 
     #sleep(4)
